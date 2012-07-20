@@ -1,8 +1,8 @@
 
 if version < 600
-	syntax clear
+  syntax clear
 elseif exists("b:current_syntax")
-	finish
+  finish
 endif
 
 setlocal iskeyword+=-
@@ -20,20 +20,20 @@ syn keyword jfbValue
       \ SysMouse
       \ Shadow
 
-syn match jfbNumber 		'/\d\+/' contained display
-syn keyword jfbFont	any current none
-syn keyword jfbBoolean	Off On
+syn match jfbNumber     '/\d\+/' contained display
+syn keyword jfbFont any current none
+syn keyword jfbBoolean  Off On
 
-syn region jfbComment	start=/#/ end=/$/ display oneline
+syn region jfbComment start=/#/ end=/$/ display oneline
 
 
-hi def link jfbOption	    	Identifier
-hi def link jfbOptionSub   	Function
-hi def link jfbValue      	Keyword
+hi def link jfbOption       Identifier
+hi def link jfbOptionSub    Function
+hi def link jfbValue        Keyword
 
-hi def link jfbBoolean			Boolean
-hi def link jfbComment	 		Comment
-hi def link jfbNumber		  	Number
+hi def link jfbBoolean      Boolean
+hi def link jfbComment      Comment
+hi def link jfbNumber       Number
 
 
 let b:current_syntax = "jfbterm"
