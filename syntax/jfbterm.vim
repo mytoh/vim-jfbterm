@@ -24,7 +24,7 @@ syn match jfbNumber 		'/\d\+/' contained display
 syn keyword jfbFont	any current none
 syn keyword jfbBoolean	Off On
 
-syn region jfbComment	start=/#/ end=/$/ contains=tmuxTodo display oneline
+syn region jfbComment	start=/#/ end=/$/ display oneline
 
 
 hi def link jfbOption	    	Identifier
