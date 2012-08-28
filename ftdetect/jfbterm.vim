@@ -1,4 +1,2 @@
 
-augroup jfbterm
-au bufNewfile,bufread jfbterm.conf setf jfbterm
-augroup end
+autocmd bufNewfile,bufread jfbterm.conf setfiletype jfbterm
